@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "titulo": "Aprendiendo POO con Python",
+        "contenido": "En este post estamos probando cómo guardar objetos de Python en un archivo JSON externo de forma permanente",
+        "autor": {
+            "nombre": "Beto Cyber",
+            "bio": "Estudiante de programación en Python apasionado por el desarrollo backend"
+        },
+        "tags": [
+            "Python",
+            "Clases",
+            "JSON",
+            "Objetos"
+        ],
+        "estado": "publicado"
+    },
+    {
+        "id": 2,
+        "titulo": "Mi primer post en POO",
+        "contenido": "En este post estamos probando cómo guardar objetos de Python en un archivo JSON externo de forma permanente",
+        "autor": {
+            "nombre": "Beto Cyber",
+            "bio": "Estudiante de programación en Python apasionado por el desarrollo backend"
+        },
+        "tags": [
+            "Python",
+            "Clases",
+            "JSON",
+            "Objetos"
+        ],
+        "estado": "• publicado"
+    }
+]
