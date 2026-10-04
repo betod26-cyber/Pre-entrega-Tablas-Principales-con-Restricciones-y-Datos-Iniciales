@@ -19,3 +19,20 @@ Para ejecutar y probar la persistencia del sistema, abre una terminal en la carp
 ```bash
 python main.py
 ```
+
+
+
+
+
+## 🗄️ Módulo Base de Datos: Proyecto Retail (SQL)
+
+Se incorporó el diseño relacional para el ecosistema del proyecto bajo la base de datos `retail_project`.
+
+### Estructura del Script (`script_retail.sql`):
+- **DDL (Estructura)**: Creación de tablas integradas (`clientes`, `productos`, `ventas`) utilizando restricciones de clave primaria y claves foráneas (`FOREIGN KEY`) para resguardar la consistencia de los datos.
+- **Restricciones CHECK**:
+  1. `chk_edad_cliente`: Garantiza que los compradores tengan entre 18 y 120 años.
+  2. `chk_precio_positivo`: Evita que existan productos con precios en cero o negativos.
+  3. `chk_cantidad_vendida`: Asegura que toda transacción registre al menos una unidad.
+- **Transaccionalidad (ACID)**: El proceso de carga masiva de datos está protegido mediante un bloque `BEGIN; ... COMMIT;` para mitigar cargas incompletas en caso de fallas.
+- **Sentencias DML**: Aplicación de actualizaciones masivas por categorías (`UPDATE`) y remoción de registros individuales (`DELETE`) mediante el uso preciso de cláusulas `WHERE`.
